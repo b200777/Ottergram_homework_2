@@ -105,20 +105,39 @@ a {
   border: 1px solid rgb(100%, 100%, 100%);
   border: 1px solid rgba(100%, 100%, 100%, 0.8);
 }
+
+.nav-button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  font-size: 50px;
+}
+
+.nav-button:hover {
+  color: white;
+}
+
+.nav-button:focus {
+  outline: none;
+}
+
 @media all and (min-width: 768px) {
-.main-content {
-flex-direction: row;
-overflow: hidden;
-}
-.thumbnail-list {
-flex-direction: column;
-order:0;
-margin-left: 20px;
-}
-.thumbnail-item {
-max-width: 260px;
-}
-.thumbnail-item + .thumbnail-item {
-margin-top: 20px;
-}
+  .main-content {
+    flex-direction: row;
+    overflow: hidden;
+  }
+  .thumbnail-list {
+    flex-direction: column;
+    order: 0;
+    margin-left: 20px;
+  }
+  .thumbnail-item {
+    max-width: 260px;
+  }
+  .thumbnail-item+.thumbnail-item {
+    margin-top: 20px;
+  }
 }
